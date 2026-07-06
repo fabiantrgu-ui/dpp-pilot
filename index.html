@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPP Pilot — Scan a passport view | TechFlow × Elevate Essentials</title>
+<meta name="description" content="Scan hub for the TechFlow × Elevate Essentials Digital Product Passport pilot. One garment, three access levels — scan the QR code for the view you are entitled to.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='15,1 27,8 27,22 15,29 3,22 3,8' fill='%230E2A47'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tf-tokens.css">
+<link rel="stylesheet" href="assets/css/tf-base.css">
+<style>
+  .hub-hero { padding: clamp(2.5rem, 5vw, 4.5rem) 0 1rem; }
+  .hub-hero h1 { font-size: var(--fs-h1); max-width: 22ch; }
+  .hub-hero .hero-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 52ch; margin-top: 1rem; }
+  .hub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2.5rem 0 var(--section-pad);
+  }
+  .hub-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-card);
+    padding: 1.8rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
+  .hub-card h2 { font-size: 1.25rem; }
+  .hub-card p { color: var(--ink-soft); font-size: 0.92rem; flex: 1; }
+  .hub-qr { align-self: center; padding: 0.9rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-m); }
+  .hub-lock { font-size: 0.8rem; color: var(--ink-faint); display: flex; align-items: center; gap: 0.4rem; }
+  .hub-open { font-weight: 600; text-decoration: none; color: var(--teal-dark); font-size: 0.92rem; }
+  .hub-open:hover { text-decoration: underline; }
+  .hub-card--public .tier-badge--public { background: var(--tier-public-tint); color: var(--tier-public); }
+  .hub-card--legit .tier-badge--legit { background: var(--tier-legit-tint); color: var(--tier-legit); }
+  .hub-card--authority .tier-badge--authority { background: var(--tier-authority-tint); color: var(--tier-authority); }
+  @media (max-width: 900px) { .hub-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-hex" viewBox="0 0 30 30"><polygon points="15,1 27,8 27,22 15,29 3,22 3,8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 15h12M15 9v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" width="30" height="30"><use href="#icon-hex"/></svg>
+      <span>TechFlow<small>Engineering impact. Digitally.</small></span>
+    </a>
+    <div class="nav-right">
+      <a href="public-access.html" class="btn btn-primary">Open the passport</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hub-hero">
+    <div class="wrap">
+      <span class="eyebrow">DPP Pilot · Elevate Essentials Organic Tee</span>
+      <h1>One garment. One record. Three levels of access.</h1>
+      <p class="hero-lead">This is the scan hub for the Digital Product Passport pilot. Scan the code for the role you hold — the passport shows exactly the fields that role is entitled to see under the ESPR, nothing more and nothing less.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap hub-grid">
+      <article class="hub-card hub-card--public">
+        <span class="tier-badge tier-badge--public"><span class="dot"></span>Public</span>
+        <h2>Consumers &amp; everyone else</h2>
+        <p>What the shopper sees after scanning the swing tag: materials, care, footprint class and recyclability — in plain language, no login.</p>
+        <div class="hub-qr" data-qr data-qr-page="public-access.html" data-qr-size="140" role="img" aria-label="QR code linking to the public passport view"></div>
+        <a class="hub-open" href="public-access.html">Open the public view →</a>
+      </article>
+
+      <article class="hub-card hub-card--legit">
+        <span class="tier-badge tier-badge--legit"><span class="dot"></span>Legitimate Interest</span>
+        <h2>Recyclers, resellers &amp; auditors</h2>
+        <p>Adds verified material quantities, disassembly notes and the footprint calculation basis needed for sorting, resale and audit work.</p>
+        <div class="hub-qr" data-qr data-qr-page="legitimate-interest-access.html" data-qr-size="140" role="img" aria-label="QR code linking to the legitimate interest passport view"></div>
+        <span class="hub-lock"><svg width="14" height="14"><use href="#icon-lock"/></svg>Access code required</span>
+        <a class="hub-open" href="legitimate-interest-access.html">Open the partner view →</a>
+      </article>
+
+      <article class="hub-card hub-card--authority">
+        <span class="tier-badge tier-badge--authority"><span class="dot"></span>Regulatory</span>
+        <h2>Market surveillance &amp; customs</h2>
+        <p>The complete statutory record: conformity certificates, operator contacts and batch weights, structured against ESPR Annex III.</p>
+        <div class="hub-qr" data-qr data-qr-page="regulatory-access.html" data-qr-size="140" role="img" aria-label="QR code linking to the regulatory passport view"></div>
+        <span class="hub-lock"><svg width="14" height="14"><use href="#icon-lock"/></svg>Access code required</span>
+        <a class="hub-open" href="regulatory-access.html">Open the regulatory view →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 TechFlow — DPP pilot for Elevate Essentials · ESPR / PEFCR A&amp;F / REACH</span>
+      <span>techflow.io/dpp</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/qrcode.min.js"></script>
+<script src="assets/js/tf-nav.js"></script>
+</body>
+</html>
