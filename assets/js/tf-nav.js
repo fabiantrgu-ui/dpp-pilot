@@ -21,7 +21,7 @@
       '<div class="gate-card" role="dialog" aria-modal="true" aria-labelledby="gateTitle">' +
       '  <span class="tier-badge tier-badge--' + gateTier + '"><span class="dot"></span>' + gateTitle + '</span>' +
       '  <h1 id="gateTitle">This record is restricted.</h1>' +
-      '  <p>Access to this view of the Digital Product Passport is limited to verified users. Enter the access code issued by TechFlow.</p>' +
+      '  <p>Access to this view of the Digital Product Passport is limited to verified users. Enter the access code issued by Lumen Apparel.</p>' +
       '  <form class="gate-form" novalidate>' +
       '    <label for="gateInput" class="sr-only">Access code</label>' +
       '    <input id="gateInput" type="password" inputmode="numeric" autocomplete="one-time-code" placeholder="Access code" required>' +
